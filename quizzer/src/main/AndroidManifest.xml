@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spencer.quizzer.view" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".QuizListActivity"
+            android:label="@string/title_activity_quiz_list"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="HomeActivity" />
+        </activity>
+        <activity
+            android:name=".CreateQuizActivity"
+            android:label="@string/title_activity_create_quiz"
+            android:parentActivityName=".QuizListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="QuizListActivity" />
+        </activity>
+        <activity
+            android:name=".AddQuestionActivity"
+            android:label="@string/title_activity_add_prompt"
+            android:parentActivityName=".CreateQuizActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="CreateQuizActivity" />
+        </activity>
+        <activity
+            android:name=".AddTextAnswerActivity"
+            android:label="@string/title_activity_add_text_answer"
+            android:parentActivityName=".AddQuestionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="AddQuestionActivity" />
+        </activity>
+        <activity
+            android:name=".AddTextPromptActivity"
+            android:label="@string/title_activity_add_text_prompt"
+            android:parentActivityName=".AddQuestionActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="AddQuestionActivity" />
+        </activity>
+        <activity
+            android:name=".SelectedQuizActivity"
+            android:label="@string/title_activity_selected_quiz" >
+        </activity>
+        <activity
+            android:name=".AnswerQuestionActivity"
+            android:label="@string/title_activity_answer_question" >
+        </activity>
+    </application>
+
+</manifest>

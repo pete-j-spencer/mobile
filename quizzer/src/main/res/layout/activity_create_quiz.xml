@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.spencer.quizzer.view.CreateQuizActivity">
+
+
+    <TextView
+        android:id="@+id/qNameLabel"
+        android:text="Quiz Name:"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/qNameInput"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/qNameLabel"/>
+
+    <TextView
+        android:id="@+id/qDescriptionLabel"
+        android:text="Description:"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qNameLabel"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/qDescriptionInput"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/qDescriptionLabel"
+        android:layout_below="@id/qNameInput"/>
+
+    <TextView
+        android:id="@+id/qAuthorLabel"
+        android:text="Author:"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qDescriptionLabel"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/qAuthorInput"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/qAuthorLabel"
+        android:layout_below="@id/qDescriptionInput"/>
+
+    <TextView
+        android:id="@+id/qQuestionListLabel"
+        android:text="Questions:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/qAuthorInput"/>
+
+
+
+    <ListView
+        android:id="@+id/qQuestionsListView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/qQuestionListLabel"/>
+
+    <Button
+        android:id="@+id/qAddQuestionButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Add Question"
+        android:onClick="addNewQuestion"/>
+    <Button
+        android:id="@+id/qSaveButton"
+        android:text="Save Quiz"
+        android:onClick="saveNewQuiz"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/qQuestionListLabel"/>
+
+</RelativeLayout>

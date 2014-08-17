@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Quizzer</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="homeTitle">Welcome to Quizzer</string>
+    <string name="action_settings">Settings</string>
+    <string name="startProgram">Begin!</string>
+    <string name="title_activity_quiz_list">QuizListActivity</string>
+    <string name="quizListTitle">Quizzes</string>
+    <string name="create_quiz_button">Create New Quiz</string>
+    <string name="title_activity_create_quiz">CreateQuizActivity</string>
+    <string name="title_activity_add_prompt">AddPromptActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_text_answer">AddTextAnswerActivity</string>
+    <string name="title_activity_add_text_prompt">AddTextPromptActivity</string>
+    <string name="title_activity_selected_quiz">SelectedQuizActivity</string>
+    <string name="title_activity_answer_question">AnswerQuestionActivity</string>
+
+</resources>
